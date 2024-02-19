@@ -3,7 +3,7 @@ import logo from '../logo.svg'
 
 export default function Footer() {
   return (
-    <footer style={{backgroundColor: '#495E57'}}>
+    <footer>
         <img src={logo} alt='footer logo'/>
     <div>
         <h3>Doormat</h3>

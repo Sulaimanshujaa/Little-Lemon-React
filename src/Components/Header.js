@@ -1,8 +1,7 @@
 import React from 'react'
 import logo from '../logo.svg'
-function Header() {
+export default function Header() {
   return (
       <img src={logo} alt="logo"/>
   )
 }
-export default Header;
