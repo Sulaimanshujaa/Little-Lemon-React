@@ -1,46 +1,35 @@
 import React from "react";
+import './Header.css';
 import logo from "../logo.svg";
 
-export default function Header() {
+function Header() {
   return (
-    <header className="container">
-      <div className="logo">
-        <img src={logo} alt="Lemon Lemon" />
+    <nav id="navbar-container">
+      <div id="logo">
+        <img src={logo} className="logo" alt="littlelemon.com" />
       </div>
-      <nav className="navbar">
-        <ul>
-          <li className="items">
-            <a href="Home" target="_blank">
-              Home
-            </a>
+        <ul id="navbar">
+          <li className="item" id="item-1">
+            <a href="Home">Home</a>
           </li>
-          <li className="items">
-            <a href="About" target="_blank">
-              About
-            </a>
+          <li className="item" id="item-2">
+            <a href="About">About</a>
           </li>
-          <li className="items">
-            <a href="Menu" target="_blank">
-              Menu
-            </a>
+          <li className="item" id="item-3">
+            <a href="Menu">Menu</a>
           </li>
-          <li className="items">
-            <a href="Reserve a table" target="_blank">
-            Reserve a table
-            </a>
+          <li className="item" id="item-4">
+            <a href="Reservations">Reservations</a>
           </li>
-          <li className="items">
-            <a href="Order Online" target="_blank">
-              Order Online
-            </a>
+          <li className="item" id="item-5">
+            <a href="Orderonline">Order Online</a>
           </li>
-          <li className="items">
-            <a href="Login" target="_blank">
-              Login
-            </a>
+          <li className="item" id="item-6">
+            <a href="Login">Login</a>
           </li>
         </ul>
-      </nav>
-    </header>
+    </nav>
   );
 }
+
+export default Header;
